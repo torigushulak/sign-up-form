@@ -1,0 +1,87 @@
+* {
+background-color: rgb(232, 232, 232);
+margin: 0;
+}
+.container {
+    flex-direction: row;
+    display: inline;
+}
+
+/* left side */
+@font-face {
+    font-family: 'odin-font';
+    src: url(Norse-Bold.otf);
+  }
+
+.left-container {
+display: flexbox;
+flex-direction: column;
+margin: 0;
+display: block;
+width: auto;
+position: relative;
+justify-content: center;
+}
+/* transparent box */
+.logo{
+   background-color: rgb(0, 0, 0, 0.5);
+   position: absolute;
+   flex-direction: row;
+   width: 809px;
+   height: 100px;
+   display: flex;
+   padding: 30px;
+   align-items: baseline;
+   justify-content: center;
+   top: 40%;
+  transform: translate(0, -50%);
+}
+
+h1{
+    background-color: rgb(0, 0, 0, 0.01);
+    font-family: 'odin-font';
+    color: white;
+    font-size: 90px;
+    align-self: center;
+}
+/* image */
+#dog{
+    background-color: rgb(0, 0, 0, 0.01);
+    max-height: 125px;
+    display: inline;
+    padding-right: 2px;
+    align-self: center;
+}
+/* image */
+#plant{
+    position: relative;
+    height: 100vh;
+    margin: 0; 
+}
+
+/* right side */
+
+.right-container {
+    display: flexbox;
+    flex-direction: column;
+    margin: 0;
+    display: block;
+    width: auto;
+    position: relative;
+    justify-content: center;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+
+}
+
+.emphasized { font-style: italic; }
+p {
+    font-family: 'Arial Narrow', sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
