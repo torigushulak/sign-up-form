@@ -1,87 +1,178 @@
 * {
-background-color: rgb(232, 232, 232);
-margin: 0;
+    background-color: rgb(232, 232, 232);
+    margin: 0;
 }
+
 .container {
+    display: flex;
     flex-direction: row;
-    display: inline;
 }
 
 /* left side */
 @font-face {
     font-family: 'odin-font';
     src: url(Norse-Bold.otf);
-  }
+}
 
 .left-container {
-display: flexbox;
-flex-direction: column;
-margin: 0;
-display: block;
-width: auto;
-position: relative;
-justify-content: center;
-}
-/* transparent box */
-.logo{
-   background-color: rgb(0, 0, 0, 0.5);
-   position: absolute;
-   flex-direction: row;
-   width: 809px;
-   height: 100px;
-   display: flex;
-   padding: 30px;
-   align-items: baseline;
-   justify-content: center;
-   top: 40%;
-  transform: translate(0, -50%);
+    /* display: flexbox; */
+    flex: 1;
+    float: left;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0;
+    display: block;
+    width: 25%;
+    position: relative;
+    justify-content: center;
 }
 
-h1{
+/* transparent box with logo */
+.logo {
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    float: left;
+    overflow: hidden;
+    flex-direction: row;
+    width: 100%;
+    min-width: fit-content;
+    height: 100px;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    top: 35%;
+    transform: translate(0, -50%);
+}
+
+h1 {
     background-color: rgb(0, 0, 0, 0.01);
     font-family: 'odin-font';
     color: white;
-    font-size: 90px;
+    font-size: 100px;
     align-self: center;
+    padding-top: 20px;
+    padding-right: 50px;
 }
+
 /* image */
-#dog{
+#dog {
     background-color: rgb(0, 0, 0, 0.01);
     max-height: 125px;
     display: inline;
     padding-right: 2px;
     align-self: center;
 }
+
 /* image */
-#plant{
+#plant {
     position: relative;
     height: 100vh;
-    margin: 0; 
+    object-fit: fill;
 }
 
 /* right side */
 
 .right-container {
-    display: flexbox;
+    flex: 2;
+    overflow: hidden;
     flex-direction: column;
     margin: 0;
     display: block;
-    width: auto;
+    width: 75%;
     position: relative;
     justify-content: center;
+    float: right;
 }
 
 .intro {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    padding-top: 290px;
+    float: left;
+    padding-bottom: 50px;
+
 
 }
 
-.emphasized { font-style: italic; }
+.emphasized {
+    font-style: italic;
+}
+
 p {
-    font-family: 'Arial Narrow', sans-serif;
+    font-family: sans-serif;
     color: black;
-    font-size: 25px;
+    font-size: 27px;
     font-weight: normal;
     letter-spacing: 1px;
+    display: inline-flexbox;
+    flex-direction: column;
+    width: 64vh;
+    padding: 20px;
+    padding-left: 100px;
+}
+
+#signup {
+    box-shadow: 10px 10px;
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+    box-shadow: 10px 10px #000000;
+    position: relative;
+    z-index: 10;
+    /* background-color: #596D48; */
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    box-sizing: border-box;
+    float: left;
+    padding-top: 10px;
+}
+
+
+input {
+    appearance: none;
+    width: 290px;
+    height: 35px;
+    border: gray;
+    box-shadow: inset 2px 2px 15px #ccc;
+    border-radius: 5px;
+    display: block;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    transition: 0.4s ease-in-out;
+}
+
+input:focus {
+    color: #596D48;
+}
+
+label {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+    margin-bottom: 80px;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    
+    
 }
